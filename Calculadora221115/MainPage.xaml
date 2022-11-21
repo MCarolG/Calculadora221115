@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Calculadora221115.MainPage">
+
+    <Grid>
+
+        <Grid.RowDefinitions>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+        </Grid.RowDefinitions>
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+
+
+        <Label x:Name="txtResultado" HorizontalOptions="End" Text="0" FontSize="50" Grid.ColumnSpan="4"  Grid.Column="0" Grid.Row="0" />
+
+        <Button Clicked="backUp" Text="CE" Grid.Column="0" Grid.Row="1"/>
+        <Button Clicked="onPercentage" Text="%" Grid.Column="1" Grid.Row="1" />
+        <Button Clicked="onClear" Text="ERS" Grid.Column="2" Grid.Row="1" />
+        <Button Clicked="clicMult" Text="*" Grid.Column="3" Grid.Row="1" />
+
+
+        <Button Clicked="clicNumero" Text="7" Grid.Column="0" Grid.Row="2"/>
+        <Button Clicked="clicNumero" Text="8" Grid.Column="1" Grid.Row="2" />
+        <Button Clicked="clicNumero" Text="9" Grid.Column="2" Grid.Row="2" />
+        <Button Clicked="clicSum" Text="+" Grid.Column="3" Grid.Row="2" />
+
+        <Button Clicked="clicNumero" Text="4" Grid.Column="0" Grid.Row="3"/>
+        <Button Clicked="clicNumero" Text="5" Grid.Column="1" Grid.Row="3" />
+        <Button Clicked="clicNumero" Text="6" Grid.Column="2" Grid.Row="3" />
+        <Button Clicked="clicRest" Text="-" Grid.Column="3" Grid.Row="3" />
+
+        <Button Clicked="clicNumero" Text="1" Grid.Column="0" Grid.Row="4"/>
+        <Button Clicked="clicNumero" Text="2" Grid.Column="1" Grid.Row="4" />
+        <Button Clicked="clicNumero" Text="3" Grid.Column="2" Grid.Row="4" />
+        <Button Clicked="clicDiv" Text="/" Grid.Column="3" Grid.Row="4" />
+
+        <Button Clicked="clicNumero" Text="0" Grid.Column="0" Grid.Row="5"/>
+        <Button Clicked="clicNumero" Text="." Grid.Column="1" Grid.Row="5" />
+        <Button Clicked="clicIgual" Text="=" Grid.Column="2" Grid.Row="5" Grid.ColumnSpan="2" />
+
+    </Grid>
+
+</ContentPage>
